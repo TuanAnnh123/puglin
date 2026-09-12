@@ -1,0 +1,37 @@
+name: ShopGuiSMP
+version: '1.0.0'
+main: net.bananasmp.shop.ShopGuiSMP
+api-version: '1.21'
+author: BananaSMP
+softdepend: [Vault]
+description: BananaSMP Shop GUI - mua/ban vat pham qua giao dien
+
+commands:
+  shop:
+    description: Mo giao dien shop BananaSMP
+    usage: /shop
+    permission: shopguismp.use
+    permission-message: "&cBan khong co quyen dung lenh nay."
+  sell:
+    description: Ban vat pham dang cam tren tay
+    usage: /sell [gia]
+    permission: shopguismp.use
+    permission-message: "&cBan khong co quyen dung lenh nay."
+  sellall:
+    description: Ban toan bo vat pham co the ban trong kho do
+    usage: /sellall
+    permission: shopguismp.use
+    permission-message: "&cBan khong co quyen dung lenh nay."
+  shopreload:
+    description: Tai lai cau hinh shop
+    usage: /shopreload
+    permission: shopguismp.admin
+    permission-message: "&cBan khong co quyen dung lenh nay."
+
+permissions:
+  shopguismp.use:
+    description: Cho phep dung shop, sell, sellall
+    default: true
+  shopguismp.admin:
+    description: Cho phep reload cau hinh shop
+    default: op

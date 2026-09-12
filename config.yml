@@ -1,0 +1,328 @@
+# =========================================================
+#            BANANASMP SHOP - CONFIG GIA VAT PHAM
+# =========================================================
+# unit-size: so luong item nhan/tru trong 1 lan mua/ban co gia = "price"
+#            (vd string unit-size: 16, price: 1000 => 16 tơ nhện = 1000$)
+# sellable: co cho /sell hay khong (mac dinh true)
+# enchantments: danh sach enchant se duoc gan khi MUA, va dung de nhan dang
+#               khi BAN (item phai co dung bo enchant nay moi khop)
+# potion-type: dung cho item la POTION/SPLASH_POTION (vd FIRE_RESISTANCE, SWIFTNESS)
+# =========================================================
+
+gui-title: "&6&l🍌 BANANASMP SHOP"
+currency-symbol: "$"
+
+items:
+
+  # ================= BLOCKS =================
+  stone:
+    material: STONE
+    category: BLOCKS
+    display-name: "&7Đá"
+    price: 2
+  cobblestone:
+    material: COBBLESTONE
+    category: BLOCKS
+    display-name: "&7Đá Cuội"
+    price: 2
+  dirt:
+    material: DIRT
+    category: BLOCKS
+    display-name: "&6Đất"
+    price: 1
+  sand:
+    material: SAND
+    category: BLOCKS
+    display-name: "&eCát"
+    price: 2
+  gravel:
+    material: GRAVEL
+    category: BLOCKS
+    display-name: "&7Sỏi"
+    price: 2
+  oak_log:
+    material: OAK_LOG
+    category: BLOCKS
+    display-name: "&6Gỗ Sồi"
+    price: 5
+  oak_planks:
+    material: OAK_PLANKS
+    category: BLOCKS
+    display-name: "&6Ván Gỗ Sồi"
+    price: 3
+  glass:
+    material: GLASS
+    category: BLOCKS
+    display-name: "&fKính"
+    price: 5
+  bricks:
+    material: BRICKS
+    category: BLOCKS
+    display-name: "&cGạch"
+    price: 8
+  sandstone:
+    material: SANDSTONE
+    category: BLOCKS
+    display-name: "&eSa Thạch"
+    price: 5
+  andesite:
+    material: ANDESITE
+    category: BLOCKS
+    display-name: "&7Andesite"
+    price: 3
+  diorite:
+    material: DIORITE
+    category: BLOCKS
+    display-name: "&fDiorite"
+    price: 3
+  granite:
+    material: GRANITE
+    category: BLOCKS
+    display-name: "&cGranite"
+    price: 3
+  netherrack:
+    material: NETHERRACK
+    category: BLOCKS
+    display-name: "&4Netherrack"
+    price: 4
+  end_stone:
+    material: END_STONE
+    category: BLOCKS
+    display-name: "&eEnd Stone"
+    price: 10
+  deepslate:
+    material: DEEPSLATE
+    category: BLOCKS
+    display-name: "&8Deepslate"
+    price: 4
+  obsidian:
+    material: OBSIDIAN
+    category: BLOCKS
+    display-name: "&5Obsidian"
+    price: 10000
+
+  # ================= ORES =================
+  coal:
+    material: COAL
+    category: ORES
+    display-name: "&8Than"
+    price: 1000
+  raw_iron:
+    material: RAW_IRON
+    category: ORES
+    display-name: "&fSắt Thô"
+    price: 1000
+  raw_copper:
+    material: RAW_COPPER
+    category: ORES
+    display-name: "&6Đồng Thô"
+    price: 1000
+  raw_gold:
+    material: RAW_GOLD
+    category: ORES
+    display-name: "&eVàng Thô"
+    price: 1000
+  redstone:
+    material: REDSTONE
+    category: ORES
+    display-name: "&cRedstone"
+    price: 1000
+  lapis_lazuli:
+    material: LAPIS_LAZULI
+    category: ORES
+    display-name: "&9Lapis Lazuli"
+    price: 1000
+  emerald:
+    material: EMERALD
+    category: ORES
+    display-name: "&aNgọc Lục Bảo"
+    price: 1000
+  diamond:
+    material: DIAMOND
+    category: ORES
+    display-name: "&bKim Cương"
+    price: 6700
+  netherite_ingot:
+    material: NETHERITE_INGOT
+    category: ORES
+    display-name: "&8Phôi Netherite"
+    price: 20000
+
+  # ================= FOOD =================
+  bread:
+    material: BREAD
+    category: FOOD
+    display-name: "&6Bánh Mì"
+    price: 10
+  cooked_beef:
+    material: COOKED_BEEF
+    category: FOOD
+    display-name: "&6Bò Nướng"
+    price: 10
+  cooked_porkchop:
+    material: COOKED_PORKCHOP
+    category: FOOD
+    display-name: "&6Sườn Heo Nướng"
+    price: 10
+  cooked_chicken:
+    material: COOKED_CHICKEN
+    category: FOOD
+    display-name: "&6Gà Nướng"
+    price: 10
+  cooked_mutton:
+    material: COOKED_MUTTON
+    category: FOOD
+    display-name: "&6Thịt Cừu Nướng"
+    price: 10
+  cooked_rabbit:
+    material: COOKED_RABBIT
+    category: FOOD
+    display-name: "&6Thỏ Nướng"
+    price: 10
+  cooked_cod:
+    material: COOKED_COD
+    category: FOOD
+    display-name: "&6Cá Tuyết Nướng"
+    price: 10
+  cooked_salmon:
+    material: COOKED_SALMON
+    category: FOOD
+    display-name: "&6Cá Hồi Nướng"
+    price: 10
+  baked_potato:
+    material: BAKED_POTATO
+    category: FOOD
+    display-name: "&6Khoai Tây Nướng"
+    price: 10
+  carrot:
+    material: CARROT
+    category: FOOD
+    display-name: "&6Cà Rốt"
+    price: 10
+  potato:
+    material: POTATO
+    category: FOOD
+    display-name: "&6Khoai Tây"
+    price: 10
+  apple:
+    material: APPLE
+    category: FOOD
+    display-name: "&cTáo"
+    price: 10
+  melon_slice:
+    material: MELON_SLICE
+    category: FOOD
+    display-name: "&aDưa Hấu"
+    price: 10
+  pumpkin_pie:
+    material: PUMPKIN_PIE
+    category: FOOD
+    display-name: "&6Bánh Bí Ngô"
+    price: 10
+  cake:
+    material: CAKE
+    category: FOOD
+    display-name: "&fBánh Kem"
+    price: 10
+  cookie:
+    material: COOKIE
+    category: FOOD
+    display-name: "&6Bánh Quy"
+    price: 10
+  golden_carrot:
+    material: GOLDEN_CARROT
+    category: FOOD
+    display-name: "&eCà Rốt Vàng"
+    price: 250
+  golden_apple:
+    material: GOLDEN_APPLE
+    category: FOOD
+    display-name: "&eTáo Vàng"
+    price: 300
+  enchanted_golden_apple:
+    material: ENCHANTED_GOLDEN_APPLE
+    category: FOOD
+    display-name: "&6&lTáo Vàng Phù Phép"
+    price: 10000
+
+  # ================= GEAR (TOOLS) =================
+  end_crystal:
+    material: END_CRYSTAL
+    category: GEAR
+    display-name: "&dCrystal"
+    price: 45000
+  totem_of_undying:
+    material: TOTEM_OF_UNDYING
+    category: GEAR
+    display-name: "&eTotem Bất Tử"
+    price: 5000
+  string:
+    material: STRING
+    category: GEAR
+    display-name: "&fTơ Nhện"
+    price: 1000
+    unit-size: 16
+  wind_charge:
+    material: WIND_CHARGE
+    category: GEAR
+    display-name: "&bCầu Gió"
+    price: 2000
+    unit-size: 16
+  fire_resistance_potion:
+    material: POTION
+    potion-type: FIRE_RESISTANCE
+    category: GEAR
+    display-name: "&cThuốc Kháng Lửa"
+    price: 25000
+  speed_potion:
+    material: POTION
+    potion-type: SWIFTNESS
+    category: GEAR
+    display-name: "&bThuốc Tốc Độ"
+    price: 20000
+
+  # ================= COMBAT =================
+  mace:
+    material: MACE
+    category: COMBAT
+    display-name: "&cMace"
+    price: 1000000
+  diamond_sword_sharp4:
+    material: DIAMOND_SWORD
+    category: COMBAT
+    display-name: "&bKiếm Kim Cương &7[Sắc Bén IV]"
+    price: 100000
+    enchantments:
+      SHARPNESS: 4
+  mace_breach3:
+    material: MACE
+    category: COMBAT
+    display-name: "&cMace &7[Phong Bộc III]"
+    price: 15000000
+    enchantments:
+      BREACH: 3
+  diamond_axe_full:
+    material: DIAMOND_AXE
+    category: COMBAT
+    display-name: "&bRìu Kim Cương &7[Full Enchant]"
+    price: 3000000000
+    enchantments:
+      EFFICIENCY: 5
+      SHARPNESS: 5
+      UNBREAKING: 3
+      FORTUNE: 3
+      MENDING: 1
+
+  # ================= FARM =================
+  sugar_cane:
+    material: SUGAR_CANE
+    category: FARM
+    display-name: "&aMía"
+    price: 1000
+    unit-size: 64
+  oak_sapling:
+    material: OAK_SAPLING
+    category: FARM
+    display-name: "&2Chồi Cây Gỗ Sồi"
+    price: 1000
+    unit-size: 64
